@@ -31,4 +31,4 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 
 6. Style your site with [`styled-components`](https://styled-components.com/).
 
-7. Put your assets (e.g. images) in the `assets` directory, and they'll be copied to the `assets` directory in the output.
+7. Put any static files (e.g. images, robots.txt) in the `static` directory, and they'll be copied to the output directory. This happens recursively, i.e. directory structures inside `static` are copied over.

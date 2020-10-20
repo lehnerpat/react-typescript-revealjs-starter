@@ -1,17 +1,17 @@
 import path from "path";
-import fs, { mkdirp } from "fs-extra";
+import fs from "fs-extra";
 import ReactDOMServer from "react-dom/server";
 import { Body } from "../src/Body";
 import { createElement } from "react";
 import { ServerStyleSheet } from "styled-components";
 import { HeadContent } from "../src/HeadContent";
 import { runAsyncMain } from "./util/runAsyncMain";
-import { assetsDirPath, outDirPath } from "./util/paths";
+import { outDirPath, staticDirPath } from "./util/paths";
 
 async function build() {
   await fs.mkdirp(outDirPath);
 
-  await copyAssets();
+  await copyStaticFiles();
   await buildReactApp();
 }
 
@@ -30,10 +30,8 @@ async function buildReactApp() {
   await fs.writeFile(path.resolve(outDirPath, "index.html"), markup);
 }
 
-async function copyAssets() {
-  const assetsOutDir = path.resolve(outDirPath, "assets");
-  await mkdirp(assetsOutDir);
-  await fs.copy(assetsDirPath, assetsOutDir);
+async function copyStaticFiles() {
+  await fs.copy(staticDirPath, outDirPath);
 }
 
 runAsyncMain(build);

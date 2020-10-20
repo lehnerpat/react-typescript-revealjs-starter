@@ -30,6 +30,6 @@
     "clean": "ts-node scripts/clean.ts",
     "serve": "cd out && live-server",
     "start": "yarn build && concurrently npm:watch npm:serve",
-    "watch": "chokidar assets src -c \"yarn build\""
+    "watch": "chokidar src static -c \"yarn build\""
   }
 }
