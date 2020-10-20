@@ -6,12 +6,13 @@ import { createElement } from "react";
 import { ServerStyleSheet } from "styled-components";
 import { HeadContent } from "../src/HeadContent";
 import { runAsyncMain } from "./util/runAsyncMain";
-import { outDirPath, staticDirPath } from "./util/paths";
+import { outDirPath, revealDirPath, staticDirPath } from "./util/paths";
 
 async function build() {
   await fs.mkdirp(outDirPath);
 
   await copyStaticFiles();
+  await copyRevealFiles();
   await buildReactApp();
 }
 
@@ -32,6 +33,10 @@ async function buildReactApp() {
 
 async function copyStaticFiles() {
   await fs.copy(staticDirPath, outDirPath);
+}
+
+async function copyRevealFiles() {
+  await fs.copy(revealDirPath, outDirPath);
 }
 
 runAsyncMain(build);
