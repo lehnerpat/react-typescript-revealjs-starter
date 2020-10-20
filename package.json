@@ -1,8 +1,8 @@
 {
-  "name": "react-typescript-jsless-static-site-generator-starter",
+  "name": "react-typescript-revealjs-starter",
   "version": "0.0.1",
-  "description": "A starter to use React+TypeScript+Node for generating a static site without runtime React or JS",
-  "repository": "https://gitlab.com/lehnerpat/react-typescript-jsless-static-site-generator-starter",
+  "description": "A starter for using React+TypeScript+Node to create a Reveal.js presentation",
+  "repository": "https://gitlab.com/lehnerpat/react-typescript-revealjs-starter",
   "author": "Patrick Lehner",
   "license": "MIT",
   "private": true,

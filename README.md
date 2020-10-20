@@ -1,6 +1,8 @@
-# react-typescript-jsless-static-site-generator-starter
+# react-typescript-revealjs-starter
 
-A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Node](https://nodejs.org/en/) to generate a static site -- without runtime dependencies on React or any JS!
+A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Node](https://nodejs.org/en/) to create a [Reveal.js](https://revealjs.com/) presentation -- without runtime dependencies on React!
+
+This is based on [react-typescript-jsless-static-site-generator-starter](https://gitlab.com/lehnerpat/react-typescript-jsless-static-site-generator-starter).
 
 ## Prerequisites
 
@@ -9,7 +11,7 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 
 ## Getting Started
 
-1. Download the sources: either clone this repository or download as a [ZIP](https://gitlab.com/lehnerpat/react-typescript-jsless-static-site-generator-starter/-/archive/master/react-typescript-jsless-static-site-generator-starter-master.zip) or [TAR](https://gitlab.com/lehnerpat/react-typescript-jsless-static-site-generator-starter/-/archive/master/react-typescript-jsless-static-site-generator-starter-master.tar.gz) archive.
+1. Download the sources: either clone this repository or download as a [ZIP](https://gitlab.com/lehnerpat/react-typescript-revealjs-starter/-/archive/master/react-typescript-revealjs-starter-master.zip) or [TAR](https://gitlab.com/lehnerpat/react-typescript-revealjs-starter/-/archive/master/react-typescript-revealjs-starter-master.tar.gz) archive.
 
 2. Install the dependencies: in the root directory of this project, run:
 
