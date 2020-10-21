@@ -14,13 +14,3 @@ export const Body: FC = () => {
     </body>
   );
 };
-
-const ContentContainer = styled.div`
-  margin: 6rem auto;
-  width: 40rem;
-  max-width: 100%;
-  padding: 2rem;
-  border: 1px solid gray;
-  border-radius: 3px;
-  text-align: center;
-`;
