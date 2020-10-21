@@ -18,7 +18,7 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 3. Start the development server: in the root directory of this project, run:
 
    - `yarn start` (recommended) _or_ `npm start`
-   - This builds the site and opens it in your browser.It als watches the sources for any changes, and automatically refreshes the site when changes are detected.
+   - This builds the site and opens it in your browser. It also watches the sources for any changes, and automatically refreshes the site when changes are detected.
 
 4. If you just want to build the site once (e.g. to put it onto a static hosting service), run:
 
