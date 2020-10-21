@@ -32,3 +32,7 @@ A starter for using [React](https://reactjs.org/) + [TypeScript](https://www.typ
 6. Style your site with [`styled-components`](https://styled-components.com/).
 
 7. Put any static files (e.g. images, robots.txt) in the `static` directory, and they'll be copied to the output directory. This happens recursively, i.e. directory structures inside `static` are copied over.
+
+## Known Limitations
+
+- You can't currently include any JavaScript interactivity in your React components. For example, you can't react to an element being clicked using an `onClick` handler.
