@@ -27,7 +27,11 @@
   },
   "scripts": {
     "build": "ts-node scripts/build.ts",
+    "build:reveal-scss": "yarn reveal:install-deps && yarn reveal:build-css",
     "clean": "ts-node scripts/clean.ts",
+    "reveal:build-css": "yarn reveal:yarn gulp css",
+    "reveal:install-deps": "yarn reveal:yarn install",
+    "reveal:yarn": "cd reveal && yarn",
     "serve": "cd out && live-server",
     "start": "yarn build && concurrently npm:watch npm:serve",
     "watch": "chokidar src static -c \"yarn build\""
