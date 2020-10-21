@@ -36,7 +36,16 @@ async function copyStaticFiles() {
 }
 
 async function copyRevealFiles() {
-  await fs.copy(revealDirPath, outDirPath);
+  const subDirsToCopy = ["dist", "plugin"];
+  await Promise.all(
+    subDirsToCopy.map(async (subDirName) => {
+      const subDirSourcePath = path.resolve(revealDirPath, subDirName);
+      const subDirOutPath = path.resolve(outDirPath, subDirName);
+
+      await fs.mkdirp(subDirOutPath);
+      await fs.copy(subDirSourcePath, subDirOutPath);
+    })
+  );
 }
 
 runAsyncMain(build);
